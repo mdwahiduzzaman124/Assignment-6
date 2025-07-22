@@ -29,6 +29,20 @@
       .font-mulish {
         font-family: "Mulish", sans-serif;
       }
+      .retro {
+        background: linear-gradient(
+          to right,
+          #797dfc 0.63%,
+          rgba(121, 125, 252, 0) 150%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Mulish;
+        font-size: 64px;
+        font-weight: 900;
+        line-height: 86px;
+      }
     </style>
   </head>
   <body>
@@ -263,6 +277,57 @@
           </button>
         </div>
       </nav>
+      <!-- Banner section -->
+      <section class="flex justify-center mt-[50px]">
+        <div
+          class="bg-[#12132D] bg-[url('images/bgbanner.png')] bg-no-repeat bg-bottom w-[1170px] h-[550px] rounded-[32px] p-[100px] flex items-center justify-between"
+        >
+          <!-- Title, Description and Search boX -->
+          <div class="">
+            <h1
+              class="text-white text-[64px] font-black font-mulish leading-[86px] pb-5"
+            >
+              Welcome to the <span class="retro">ReTro</span> Forum
+            </h1>
+            <p
+              class="text-xl font-medium font-mulish text-[#FFFFFFCC] leading-9 pb-8"
+            >
+              Share your favorite opinion and win and wp <br />forum coffee mug!
+            </p>
+            <!-- Search box -->
+            <div>
+              <input
+                id="search-box"
+                type="text"
+                placeholder="Search here anything"
+                class="w-[400px] p-5 rounded-[50px] text-base font-medium font-mulish text-[#03071280]"
+              />
+              <button
+                class="text-xl text-[#FFFFFF] font-mulish font-bold py-[5px] px-[27px] bg-[#797DFC] rounded-[46px] w-[121px] h-[44px] relative right-[135px]"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+          <!-- Info section -->
+          <div
+            class="w-[371px] h-[288px] bg-white rounded-[32px] text-2xl font-mulish font-medium text-[#12132DCC] flex items-center justify-between p-12"
+          >
+            <div class="w-[190px] mr-[56px] flex flex-col gap-6">
+              <p>Registered Users</p>
+              <p>Forum</p>
+              <p>Topics</p>
+              <p>Replies</p>
+            </div>
+            <div class="flex flex-col gap-6">
+              <p>01</p>
+              <p>01</p>
+              <p>01</p>
+              <p>01</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <main></main>
     <footer></footer>
